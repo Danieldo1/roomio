@@ -12,9 +12,9 @@ const RoomPage = () => {
   return (
     <div className='container mx-auto py-10 ' >
 
-            <div className=' flex flex-col text-center items-center pb-10'>
-                <div className='md:flex hidden flex-col gap-5 text-center'>
-                    <h1 className='text-6xl font-bold text-white'>Redesign your <span className='text-blue-500'>room</span> in seconds</h1>
+            <div className=' flex flex-col text-center items-center pb-20'>
+                <div className='md:flex hidden flex-col gap-1 text-center'>
+                    <h1 className='text-6xl tracking-tighter font-bold text-white'>Redesign your <span className='text-blue-500'>room</span> in seconds</h1>
                     <p className='text-2xl text-gray-500'>Upload a room, select a theme, and get inspired to create new looks for your room.</p>
                 </div>
             </div>
