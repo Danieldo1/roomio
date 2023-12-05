@@ -1,3 +1,4 @@
+import GenButton from '@/components/GenButton'
 import SelectCmpnt from '@/components/SelectCmpnt'
 import ThemeType from '@/components/ThemeType'
 import UploadImg from '@/components/UploadImg'
@@ -23,6 +24,7 @@ const RoomPage = () => {
                 </div>
 
                 {/* Generate button */}
+                <GenButton />
             </div>
 
             <div className='md:w-2/3 flex flex-col items-center pb-10'>

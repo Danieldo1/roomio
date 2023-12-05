@@ -20,3 +20,20 @@ export const useTheme = create((set) => ({
         theme
     })
 }))
+
+export const useOutput = create((set) => ({
+    output: undefined,
+    setOutput: (output: string) => set({
+        output
+    })
+}))
+
+export const useLoading = create((set) => ({
+    isLoading: true,
+    setLoading: (opt: boolean) => set({
+       isLoading: opt,
+       setGenerating: (gen: boolean) => set({
+           isGenerating: gen
+       })
+    })
+}))
