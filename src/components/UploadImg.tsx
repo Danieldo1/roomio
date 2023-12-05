@@ -20,7 +20,7 @@ const UploadImg = () => {
         },
         
         maxFileCount:1,
-       
+      
     }
 
     function modifyUrl(url: string): string {
@@ -38,7 +38,6 @@ const UploadImg = () => {
       
           setFile(imageUrl);
           setImageUrl(imageUrl);
-          console.log(imageUrl);
         }
       }
 
@@ -59,7 +58,7 @@ const UploadImg = () => {
     <UploadDropzone
     options={options}
     onUpdate={onUpdate}
-    width='400px'
+    width='100%'
     height='200px'
     />
   )

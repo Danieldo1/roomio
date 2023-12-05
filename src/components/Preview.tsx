@@ -14,11 +14,15 @@ const Preview = () => {
     const output= useOutput((state:any)=> state.output)
 
     return isLoading ? (
-    <div className={`${isGenerating && 'animate-pulse'} md:w-[500px] md:h-[300px] w-[350px] h-[200px] mt-10 bg-slate-500 rounded-lg flex items-center justify-center `}>
+<div className={`${isGenerating && 'animate-pulse'}  mt-2 bg-slate-500 flex rounded-lg items-center justify-center`}>
+    <div className="md:h-[300px] h-[200px] flex  items-center justify-center">
         <Image src={livingroom} alt="livingroom" width={100} height={100} />
     </div>
+</div>
+ 
   ) : (
-    <div className='my-auto  '>
+    <div className=' '>
+        <h2 className='text-3xl font-bold text-white mb-3'>Your Redesigned Room</h2>
         <img 
         src={output}
         alt="output"

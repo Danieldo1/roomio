@@ -20,7 +20,7 @@ const SelectCmpnt = () => {
 
   return (
     <div className='w-full'>
-        <Select onChange={handleChange} options={options}  placeholder='Select Room Type' />
+        <Select onChange={handleChange} options={options}   placeholder='Select Room Type' className='cursor-pointer' />
     </div>
   )
 }

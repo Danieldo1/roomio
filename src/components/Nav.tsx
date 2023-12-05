@@ -8,8 +8,8 @@ const Nav = () => {
   return (
     <div className='container border-b p-5 mx-auto flex items-center justify-between '>
             <Link href={'/'} className='flex items-center gap-3 p-2'>
-              <Image src={logo} alt='logo' width={50} height={50} />
-              <h3 className='text-2xl md:text-3xl font-bold text-white'>Room.io</h3>
+              {/* <Image src={logo} alt='logo' width={50} height={50} /> */}
+              <h3 className='text-4xl md:text-5xl font-bold text-white text1'>room.io</h3>
             </Link>
             <User />
     </div>
