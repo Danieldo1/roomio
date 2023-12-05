@@ -1,5 +1,7 @@
+import ImgSlider from '@/components/ImgSlider'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ReactCompareSlider } from 'react-compare-slider'
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
      </div>
 
      <div>
-      {/* img slider */}
+      
+      <ImgSlider
+      />
      </div>
     </main>
   )
