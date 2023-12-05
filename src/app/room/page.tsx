@@ -1,4 +1,5 @@
 import SelectCmpnt from '@/components/SelectCmpnt'
+import ThemeType from '@/components/ThemeType'
 import UploadImg from '@/components/UploadImg'
 import React from 'react'
 
@@ -9,17 +10,16 @@ const RoomPage = () => {
             <div className='flex flex-col items-center gap-8 md:w-1/3'>
                 <div className='flex flex-col items-center gap-5 w-full'>
                     <h3 className='text-xl font-bold text-white'>Upload a photo of your room</h3>
-                    {/* upload photo */}
                     <UploadImg />
                 </div>
                 <div className='flex flex-col items-center gap-5 w-full'>
                     <h3 className='text-xl font-bold text-white'>Select Type</h3>
-                    {/* Select component */}
                     <SelectCmpnt />
                 </div>
                 <div className='flex flex-col items-center gap-5 w-full'>
                     <h3 className='text-xl font-bold text-white'>Room Theme</h3>
                     {/* theme component*/}
+                    <ThemeType />
                 </div>
 
                 {/* Generate button */}
