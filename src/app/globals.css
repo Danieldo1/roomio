@@ -17,3 +17,10 @@
       transform: scale(1);
   }
 }
+
+.selected {
+  background-color: rgba(103, 118, 255, 0.363);
+  border-radius: 10px;
+  padding: 10px;
+  
+}

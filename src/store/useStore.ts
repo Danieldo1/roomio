@@ -13,3 +13,10 @@ export const useRoomType = create((set) => ({
         room
     })
 }))
+
+export const useTheme = create((set) => ({
+    theme: undefined,
+    setTheme: (theme: string) => set({ 
+        theme
+    })
+}))
