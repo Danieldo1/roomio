@@ -2,12 +2,16 @@
 
 import React from 'react'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
+import result from '../assets/output.png'
+import soviet from '../assets/soviet-apt.jpeg'
 
 const ImgSlider = () => {
   return (
     <ReactCompareSlider 
-    itemOne={<ReactCompareSliderImage src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />}
-    itemTwo={<ReactCompareSliderImage src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />}
+    position={70}
+    itemOne={<ReactCompareSliderImage src='/soviet-apt.jpeg' />}
+    itemTwo={<ReactCompareSliderImage src='/output.png' />}
+   className='rounded-lg'
     />
   )
 }

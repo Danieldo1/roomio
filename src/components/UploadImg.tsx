@@ -18,17 +18,30 @@ const UploadImg = () => {
                 crop: false,
             }
         },
-
-        maxFileCount:1
+        
+        maxFileCount:1,
+       
     }
 
-    const onUpdate = ({uploadedFiles}: any) => {
-        if(uploadedFiles.length !==0) {
-            const imageUrl = uploadedFiles[0].fileUrl
-            setFile(imageUrl)
-            setImageUrl(imageUrl)
+    function modifyUrl(url: string): string {
+        if (url.includes('raw')) {
+          url = url.replace('raw', 'image');
+          url += '?f=jpg';
         }
-    }
+        return url;
+      }
+      
+      const onUpdate = ({uploadedFiles}: any) => {
+        if (uploadedFiles.length !== 0) {
+          let imageUrl = uploadedFiles[0].fileUrl;
+          imageUrl = modifyUrl(imageUrl);
+      
+          setFile(imageUrl);
+          setImageUrl(imageUrl);
+          console.log(imageUrl);
+        }
+      }
+
 
   return file ? (
     <div className='relative max-w-[500px] max-h-[300px] flex items-center justify-center'>

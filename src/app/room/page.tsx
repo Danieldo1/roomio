@@ -1,4 +1,5 @@
 import GenButton from '@/components/GenButton'
+import Preview from '@/components/Preview'
 import SelectCmpnt from '@/components/SelectCmpnt'
 import ThemeType from '@/components/ThemeType'
 import UploadImg from '@/components/UploadImg'
@@ -19,11 +20,11 @@ const RoomPage = () => {
                 </div>
                 <div className='flex flex-col items-center gap-5 w-full'>
                     <h3 className='text-xl font-bold text-white'>Room Theme</h3>
-                    {/* theme component*/}
+               
                     <ThemeType />
                 </div>
 
-                {/* Generate button */}
+              
                 <GenButton />
             </div>
 
@@ -32,7 +33,7 @@ const RoomPage = () => {
                     <h1 className='text-6xl font-bold text-white'>Redesign your <span className='text-blue-500'>room</span> in seconds</h1>
                     <p className='text-2xl text-gray-500'>Upload a room, select a theme, and get inspired to create new looks for your room.</p>
                 </div>
-                {/* Preview component */}
+                <Preview />
             </div>
         </div>
     </div>

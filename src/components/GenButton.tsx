@@ -11,10 +11,11 @@ const GenButton = () => {
     const setLoading = useLoading((state:any)=> state.setLoading)
     const setGenerating = useLoading((state:any)=> state.setGenerating)
 
+    console.log(imageUrl, theme, room)
     const handleClick = async () => {
         if(imageUrl && theme){
             setLoading(true)
-            setGenerating(true)
+            // setGenerating(true)
             const response = await fetch('/api/generate', {
                 method: 'POST',
                 headers: {
@@ -31,7 +32,7 @@ const GenButton = () => {
   return (
     <button 
     onClick={handleClick}
-    className={`${imageUrl && theme ? '' : 'cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition`}>
+    className={`${imageUrl && theme  ? '' : 'cursor-not-allowed'} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition`}>
         Generate Room
     </button>
   )

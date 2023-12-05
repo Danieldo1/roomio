@@ -22,5 +22,13 @@
   background-color: rgba(103, 118, 255, 0.363);
   border-radius: 10px;
   padding: 10px;
-  
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+}
+
+.selected::after {
+  content: url('../assets/check.svg'); /* Replace with the actual path to your SVG */
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  transform: translate(50%, -50%); /* Adjust to position the SVG as needed */
 }

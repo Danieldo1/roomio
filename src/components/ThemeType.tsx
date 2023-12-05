@@ -13,7 +13,7 @@ import scandinavian from '../assets/scandinavian.jpg'
 import { useTheme } from '@/store/useStore'
 
 const ThemeType = () => {
-    const setTheme = useTheme((state:any)=> state.setTheme)
+    const setTheme=useTheme((state:any)=>state.setTheme)
     const themes = [
         {value: 'Costal', imageUrl: costal},
         {value: 'Modern', imageUrl: modern},
@@ -25,10 +25,10 @@ const ThemeType = () => {
         {value: 'Ambient', imageUrl: ambient},
     ]
 
-    const handleClick = (e:any) => {
-        document.querySelector('.selected')?.classList.remove('selected')
-        e.currentTarget.classList.add('selected')
-        setTheme(e.currentTarget.lastChild?.textContent)
+    function handleClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+        document.querySelector(".selected")?.classList.remove("selected");
+        e.currentTarget.classList.add("selected")
+        setTheme(e.currentTarget.lastChild?.textContent);
     }
 
 
@@ -37,8 +37,8 @@ const ThemeType = () => {
         {themes.map((theme, index) => {
             return (
                 <div onClick={handleClick} key={index} className='transition-all flex flex-col items-center group gap-2 cursor-pointer'>
-                   <p className='text-white font-semibold'>{theme.value}</p>
                    <Image src={theme.imageUrl} alt={theme.value} className='rounded-lg group-hover:opacity-80' />
+                   <p className='text-white font-semibold'>{theme.value}</p>
                 </div>
             )     
         })}
