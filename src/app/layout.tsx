@@ -7,7 +7,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import Nav from '@/components/Nav'
 
 const josafin = Josefin_Sans({ subsets: ['latin'],weight: ['100', '200', '300', '400', '500', '600', '700'], variable:'--font-josafin' })
-const cairo = Cairo_Play({ subsets: ['latin'], weight: '1000',variable:'--font-cairo' })
+const cairo = Cairo_Play({ subsets: ['latin-ext'], weight: '1000',variable:'--font-cairo' })
 export const metadata: Metadata = {
   title: 'Room.io',
   description: 'Room.io get inspired to create new looks for your room.',

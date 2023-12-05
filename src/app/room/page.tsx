@@ -10,7 +10,7 @@ import React,{ useRef } from 'react'
 const RoomPage = () => {
     const topOfPageRef = useRef(null);
   return (
-    <div className='container mx-auto py-10 ' ref={topOfPageRef}>
+    <div className='container mx-auto py-10 ' >
 
             <div className=' flex flex-col text-center items-center pb-10'>
                 <div className='md:flex hidden flex-col gap-5 text-center'>
@@ -39,7 +39,7 @@ const RoomPage = () => {
                 <GenButton scrollRef={topOfPageRef} />
             </div>
 
-                <div className='w-full mx-auto flex flex-col  text-center' >
+                <div className='w-full mx-auto flex flex-col  text-center' ref={topOfPageRef}>
                 <Preview />
                 </div>
         </div>
