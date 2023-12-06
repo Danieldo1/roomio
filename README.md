@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Room.io 🔗](https://room-io.netlify.app/)
 
-## Getting Started
+![Room-io landing page](./public//roomio.png)
+Room,io is an innovative web application that leverages the power of AI to reimagine your living spaces. Using a seamless integration with Replicate AI, Room,io offers a user-friendly platform to visualize room transformations before they happen.
+ ## Features  - 
+  - **AI-Powered Design**: Transform your room with the help of advanced AI algorithms. 
+  -  **Clerk Authentication**: Secure sign-in process to protect your data and privacy.
+   -  **Image Uploads**: Easy upload of room photos with ByteScale for accurate AI redesigns. 
+   -  **Custom Room Types**: Whether it's a bedroom, living room, kitchen, or bathroom, Room,io handles them all. 
+   -  **Themed Redesigns**: Select from a variety of design themes to match your style and preference. 
+   -  **Real-time Generation**: Instantly generate a new room design with just a click. 
+   
+  ## Getting Started  
+  To get started with Room,io, simply follow these steps: 
+  1. Visit the landing page to learn more about how Room,io can transform your space. 
+  2. Sign in using the secure Clerk authentication process. 
+  3. Once signed in, you'll be redirected to the room generation page. 
+  4. Upload a photo of your room using the ByteScale upload feature. 
+  5. Select the type of room you want to redesign. 
+  6. Choose your desired theme for the new room design. 
+  7. Press "Generate" and watch as Replicate AI works its magic, creating a new room based on your specifications. 
+  
+  ## Technologies  
+  Room,io is built with the latest web technologies to ensure a smooth and responsive experience: 
+-  **Next.js 14**: For server-side rendering and static site generation.
+ -  **Tailwind CSS**: For stylish and responsive design elements. 
+-  **Zustand**: For efficient state management across the app. \
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Support  
+For support, please open an issue on our GitHub repository or contact our support team. 
+## License
+  Room.io is licensed under the [MIT License](LICENSE). Enjoy transforming your rooms with Room.io!

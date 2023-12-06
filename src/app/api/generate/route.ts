@@ -17,7 +17,7 @@ export const POST = async (req: Request) => {
             adapter_conditioning_scale: 1.1,
             // adapter_conditioning_factor:0.8,
             // guidance_scale: 8.5,
-            num_inference_steps:12,
+            num_inference_steps:15,
             negative_prompt: 'anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured, broken furniture, unfinished furniture, bad textures'
           }
         }
