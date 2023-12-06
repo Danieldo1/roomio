@@ -14,10 +14,10 @@ export const POST = async (req: Request) => {
           input: {
             image: imageUrl,
             prompt: `A photo of a ${theme} ${room}, 4k photo, highly detailed, trending on artstation`,
-            adapter_conditioning_scale: 0.78,
-            adapter_conditioning_factor:0.8,
-            guidance_scale: 8.5,
-            num_inference_steps:20,
+            // adapter_conditioning_scale: 0.78,
+            // adapter_conditioning_factor:0.8,
+            // guidance_scale: 8.5,
+            num_inference_steps:15,
             negative_prompt: 'anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured, broken furniture, unfinished furniture, bad textures'
           }
         }
